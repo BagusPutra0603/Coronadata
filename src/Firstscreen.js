@@ -75,7 +75,7 @@ class Firstscreen extends Component {
 
 
         return (
-            <View >
+            <View style={{flex:1}} >
                 <Text style={{ fontSize: 20, textAlign: 'center', paddingTop: '5%', color: 'green', fontWeight: 'bold' }}>API KAWAL CORONA (BY IDA BAGUS PUTRA MANUABA)</Text>
                 <Image style={{ width: '40%', height: '20%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/burunggaruda.jpg')} />
                 <View style={{ borderColor: 'blue', borderWidth: 3, margin: 30, borderRadius: 50 }}>
