@@ -39,10 +39,10 @@ class Jakartascreen extends Component {
                 <Image style={{ width: '63%', height: '45%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/dkijakarta.png')} />
                 <View style={{ borderColor: 'blue', borderWidth: 3, margin: 30, borderRadius: 50 }}>
                     <View style={{ backgroundColor: 'red', borderRadius: 50 }}>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsijakarta}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Positif : '+this.state.positifjakarta}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Sembuh : '+this.state.sembuhjakarta}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Meninggal : '+this.state.meninggaljakarta}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsijakarta}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Positif : '+this.state.positifjakarta}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Sembuh : '+this.state.sembuhjakarta}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Meninggal : '+this.state.meninggaljakarta}</Text>
                     </View>
                 </View>
             </View>

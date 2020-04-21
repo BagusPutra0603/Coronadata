@@ -39,10 +39,10 @@ class Jawabaratscreen extends Component {
                 <Image style={{ width: '63%', height: '45%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/jawabarat.png')} />
                 <View style={{ borderColor: 'blue', borderWidth: 3, margin: 30, borderRadius: 50 }}>
                     <View style={{ backgroundColor: 'red', borderRadius: 50 }}>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsijawabarat}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Positif : '+this.state.positifjawabarat}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Sembuh : '+this.state.sembuhjawabarat}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Meninggal : '+this.state.meninggaljawabarat}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsijawabarat}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Positif : '+this.state.positifjawabarat}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Sembuh : '+this.state.sembuhjawabarat}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Meninggal : '+this.state.meninggaljawabarat}</Text>
                     </View>
                 </View>
             </View>

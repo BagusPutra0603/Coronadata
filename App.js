@@ -29,6 +29,10 @@ screen:Bantenscreen,
   Jawabaratscreen:{
     screen:Jawabaratscreen,
   },
+},  {
+  initialRouteName: 'Firstscreen',
+  headerMode: 'none',
+  headerShown: false,
 });
 
 export default createAppContainer(AppNavigator);

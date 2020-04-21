@@ -41,10 +41,10 @@ class Bantenscreen extends Component {
                 <Image style={{ width: '63%', height: '42%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/banten.png')} />
                 <View style={{ borderColor: 'blue', borderWidth: 3, margin: 30, borderRadius: 50 }}>
                     <View style={{ backgroundColor: 'red', borderRadius: 50 }}>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsibanten}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Positif : '+this.state.positifbanten}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Sembuh : '+this.state.sembuhbanten}</Text>
-                        <Text style={{ color: 'white', fontSize: 30, textAlign: 'center' }}>{'Meninggal : '+this.state.meninggalbanten}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsibanten}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Positif : '+this.state.positifbanten}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Sembuh : '+this.state.sembuhbanten}</Text>
+                        <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Meninggal : '+this.state.meninggalbanten}</Text>
                     </View>
                 </View>
                 {/* <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
