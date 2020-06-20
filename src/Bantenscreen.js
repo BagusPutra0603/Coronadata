@@ -20,7 +20,7 @@ class Bantenscreen extends Component {
     componentDidMount() {
         axios.get('https://api.kawalcorona.com/indonesia/provinsi')
             .then((response) => {
-                console.log(response.data[5].attributes.Provinsi);
+                
                 this.setState({
                     provinsibanten: response.data[5].attributes.Provinsi,
                     sembuhbanten: response.data[5].attributes.Kasus_Semb,
@@ -37,9 +37,9 @@ class Bantenscreen extends Component {
     render() {
         return (
             <View style={{flex:1}}>
-                <Text style={{ fontSize: 20, textAlign: 'center', paddingTop: '5%', color: 'green', fontWeight: 'bold' }}>API KAWAL CORONA (BY IDA BAGUS PUTRA MANUABA)</Text>
-                <Image style={{ width: '63%', height: '42%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/banten.png')} />
-                <View style={{ borderColor: 'blue', borderWidth: 3, margin: 30, borderRadius: 50 }}>
+                <Text style={{ fontSize: 20, textAlign: 'center', color: 'green', fontWeight: 'bold' }}>API KAWAL CORONA (BY IDA BAGUS PUTRA MANUABA)</Text>
+                <Image style={{ width: '36%', height: '25%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/banten.png')} />
+                <View style={{ borderColor: 'blue', borderWidth: 3, margin: 20, borderRadius: 50 }}>
                     <View style={{ backgroundColor: 'red', borderRadius: 50 }}>
                         <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsibanten}</Text>
                         <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Positif : '+this.state.positifbanten}</Text>

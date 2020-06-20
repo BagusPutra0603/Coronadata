@@ -15,24 +15,32 @@ import Firstscreen from './src/Firstscreen';
 import Bantenscreen from './src/Bantenscreen';
 import Jakartascreen from './src/Jakartascreen';
 import Jawabaratscreen from './src/Jawabaratscreen';
+import Teststate from './src/Teststate';
+import Cobabitcoin from './src/Cobabitcoin';
+import Testflatlist from './src/Testflatlist'
 
 const AppNavigator = createStackNavigator({
- Firstscreen: {
+  Firstscreen: {
     screen: Firstscreen,
   },
-  Bantenscreen:{
-screen:Bantenscreen,
+  Bantenscreen: {
+    screen: Bantenscreen,
   },
-  Jakartascreen:{
-    screen:Jakartascreen,
+  Jakartascreen: {
+    screen: Jakartascreen,
   },
-  Jawabaratscreen:{
-    screen:Jawabaratscreen,
+  Jawabaratscreen: {
+    screen: Jawabaratscreen,
   },
-},  {
-  initialRouteName: 'Firstscreen',
-  headerMode: 'none',
-  headerShown: false,
+  Teststate:{
+    screen : Teststate,
+  },
+  Cobabitcoin:{
+    screen : Cobabitcoin,
+  },
+  Testflatlist:{
+    screen : Testflatlist,
+  },
 });
 
 export default createAppContainer(AppNavigator);

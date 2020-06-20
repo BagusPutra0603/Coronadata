@@ -18,7 +18,7 @@ class Jakartascreen extends Component {
     componentDidMount() {
         axios.get('https://api.kawalcorona.com/indonesia/provinsi')
             .then((response) => {
-                console.log(response.data[5].attributes.Provinsi);
+                
                 this.setState({
                     provinsijakarta: response.data[0].attributes.Provinsi,
                     sembuhjakarta: response.data[0].attributes.Kasus_Semb,
@@ -35,9 +35,9 @@ class Jakartascreen extends Component {
     render() {
         return (
             <View style={{flex:1}}>
-                <Text style={{ fontSize: 20, textAlign: 'center', paddingTop: '5%', color: 'green', fontWeight: 'bold' }}>API KAWAL CORONA (BY IDA BAGUS PUTRA MANUABA)</Text>
-                <Image style={{ width: '63%', height: '45%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/dkijakarta.png')} />
-                <View style={{ borderColor: 'blue', borderWidth: 3, margin: 30, borderRadius: 50 }}>
+                <Text style={{ fontSize: 20, textAlign: 'center',  color: 'green', fontWeight: 'bold' }}>API KAWAL CORONA (BY IDA BAGUS PUTRA MANUABA)</Text>
+                <Image style={{ width: '34%', height: '25%', alignSelf: 'center', marginTop: '5%' }} source={require('../image/dkijakarta.png')} />
+                <View style={{ borderColor: 'blue', borderWidth: 3, margin: 20, borderRadius: 50 }}>
                     <View style={{ backgroundColor: 'red', borderRadius: 50 }}>
                         <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Provinsi : '+this.state.provinsijakarta}</Text>
                         <Text style={{ color: 'white', fontSize: 20, textAlign: 'center' }}>{'Positif : '+this.state.positifjakarta}</Text>
